@@ -1,0 +1,12 @@
+Package: PHTH2210R
+Type: Package
+Title: Datasets for use in PHTH 2210
+Version: 0.1.0
+Author: Justin Manjourides
+Maintainer: Justin Manjourides <j.manjourides@northeastern.edu>
+Description: This package contains several datasets that may or may
+not be used in PHTH 2210 at Northeastern University. 
+License: CC0
+Depends: R (>= 3.1.0)
+Encoding: UTF-8
+LazyData: true
