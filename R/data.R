@@ -1,3 +1,4 @@
+# populate this using > sinew::makeOxygen(unicef, add_fields = "source")
 
 
 #' @title babies
@@ -38,3 +39,15 @@
 #'}
 #' @source \url{http://somewhere.important.com/}
 "smoking"
+
+#' @title DATASET_TITLE
+#' @description DATASET_DESCRIPTION
+#' @format A data frame with 144 rows and 4 variables:
+#' \describe{
+#'   \item{\code{nation}}{character COLUMN_DESCRIPTION}
+#'   \item{\code{lowbwt}}{double COLUMN_DESCRIPTION}
+#'   \item{\code{life60}}{double COLUMN_DESCRIPTION}
+#'   \item{\code{life92}}{double COLUMN_DESCRIPTION}
+#'}
+#' @source \url{http://somewhere.important.com/}
+"unicef"
