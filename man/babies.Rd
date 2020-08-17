@@ -3,29 +3,36 @@
 \docType{data}
 \name{babies}
 \alias{babies}
-\title{babies}
+\title{Low birth weight births}
 \format{
-A data frame with 100 rows and 10 variables:
+A tibble with 100 rows and 10 variables:
 \describe{
-  \item{\code{headcirc}}{double COLUMN_DESCRIPTION}
-  \item{\code{length}}{double COLUMN_DESCRIPTION}
-  \item{\code{gestage}}{double COLUMN_DESCRIPTION}
-  \item{\code{birthwt}}{double COLUMN_DESCRIPTION}
-  \item{\code{momage}}{double COLUMN_DESCRIPTION}
-  \item{\code{toxemia}}{double COLUMN_DESCRIPTION}
-  \item{\code{sbp}}{double COLUMN_DESCRIPTION}
-  \item{\code{sex}}{character COLUMN_DESCRIPTION}
-  \item{\code{grmhrm}}{character COLUMN_DESCRIPTION}
-  \item{\code{apgar5}}{double COLUMN_DESCRIPTION}
+  \item{\code{headcirc}}{Head circumferencem, in cm.}
+  \item{\code{length}}{Birth length, in cm.}
+  \item{\code{gestage}}{Gestational age in weeks.}
+  \item{\code{birthwt}}{Birth weight, in grams.}
+  \item{\code{momage}}{Age of mother, at birth.}
+  \item{\code{toxemia}}{1 if child's mother was diagnosed with toxemia
+  during pregnancy, 0 otherwise.}
+  \item{\code{sbp}}{Systolic blood pressure measurement for the infant.}
+  \item{\code{sex}}{Sex at birth where 1 is male and 0 is female.}
+  \item{\code{grmhrm}}{1 if the infant experienced a
+  germinal matrix hemorrhage, 0 otherwise.}
+  \item{\code{apgar5}}{Infant's 5 minute apgar score.}
 }
 }
 \source{
-\url{http://somewhere.important.com/}
+{Leviton, A., Fenton, T., Kuban, K.C. and Pagano, M., 1991.
+Labor and deliver characteristics and the risk of germinal matrix
+hemorrhage in low birth weight infants. Journal of child neurology,
+6(1), pp.35-40 VIA Pagano, M., & Gauvreau, K. (2018).
+ Principles of biostatistics. CRC Press.}
 }
 \usage{
 babies
 }
 \description{
-DATASET_DESCRIPTION
+{Information from a sample of 100 low birth weight
+ infants born in two teaching hospitals in Boston, Massachusetts.}
 }
 \keyword{datasets}

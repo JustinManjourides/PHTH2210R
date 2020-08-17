@@ -3,23 +3,27 @@
 \docType{data}
 \name{unicef}
 \alias{unicef}
-\title{DATASET_TITLE}
+\title{Low birth weight rates worldwide}
 \format{
-A data frame with 144 rows and 4 variables:
+A tibble with 144 rows and 4 variables:
 \describe{
-  \item{\code{nation}}{character COLUMN_DESCRIPTION}
-  \item{\code{lowbwt}}{double COLUMN_DESCRIPTION}
-  \item{\code{life60}}{double COLUMN_DESCRIPTION}
-  \item{\code{life92}}{double COLUMN_DESCRIPTION}
+  \item{\code{nation}}{Country}
+  \item{\code{lowbwt}}{Low birth-weight rates per 100 births for the year 1991}
+  \item{\code{life60}}{Life expectancy at birth for the year 1960}
+  \item{\code{life92}}{Life expectancy at birth for the year 1992}
 }
 }
 \source{
-\url{http://somewhere.important.com/}
+{United Nations Children's Fund, 1991 via Pagano, M., &
+ Gauvreau, K. (2018). Principles of biostatistics. CRC Press.,
+  1993, p. 55}
 }
 \usage{
 unicef
 }
 \description{
-DATASET_DESCRIPTION
+{Data collected from United Nations Children's Fund, 1991 via Pagano and Gauvreau, 1993.
+ These data describe the relationship between low birth weight
+  births and life expectancy at the country level.}
 }
 \keyword{datasets}

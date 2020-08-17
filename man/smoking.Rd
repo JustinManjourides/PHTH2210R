@@ -3,31 +3,34 @@
 \docType{data}
 \name{smoking}
 \alias{smoking}
-\title{smoking}
+\title{UK smoking data}
 \format{
-A data frame with 1691 rows and 12 variables:
+A tibble with 1691 rows and 12 variables:
 \describe{
-  \item{\code{gender}}{character COLUMN_DESCRIPTION}
-  \item{\code{age}}{double COLUMN_DESCRIPTION}
-  \item{\code{maritalstatus}}{character COLUMN_DESCRIPTION}
-  \item{\code{highestqualification}}{character COLUMN_DESCRIPTION}
-  \item{\code{nationality}}{character COLUMN_DESCRIPTION}
-  \item{\code{ethnicity}}{character COLUMN_DESCRIPTION}
-  \item{\code{grossincome}}{character COLUMN_DESCRIPTION}
-  \item{\code{region}}{character COLUMN_DESCRIPTION}
-  \item{\code{smoke}}{character COLUMN_DESCRIPTION}
-  \item{\code{amtweekends}}{double COLUMN_DESCRIPTION}
-  \item{\code{amtweekdays}}{double COLUMN_DESCRIPTION}
-  \item{\code{type}}{character COLUMN_DESCRIPTION}
+  \item{\code{gender}}{Gender with levels Female and Male.}
+  \item{\code{age}}{Age}
+  \item{\code{maritalstatus}}{Marital status with levels Divorced, Married, Separated, Single and Widowed.}
+  \item{\code{highestqualification}}{Highest education level with levels A Levels, Degree, GCSE/CSE, GCSE/O Level, Higher/Sub Degree, No Qualification, ONC/BTEC and Other/Sub Degree}
+  \item{\code{nationality}}{Nationality with levels British, English, Irish, Scottish, Welsh, Other, Refused and Unknown.}
+  \item{\code{ethnicity}}{Ethnicity with levels Asian, Black, Chinese, Mixed, White and Refused Unknown.}
+  \item{\code{grossincome}}{Gross income with levels Under 2,600, 2,600 to 5,200, 5,200 to 10,400, 10,400 to 15,600, 15,600 to 20,800, 20,800 to 28,600, 28,600 to 36,400, Above 36,400, Refused and Unknown.}
+  \item{\code{region}}{Region with levels London, Midlands & East Anglia, Scotland, South East, South West, The North and Wales}
+  \item{\code{smoke}}{Smoking status with levels No and Yes}
+  \item{\code{amtweekends}}{Number of cigarettes smoked per day on weekends.}
+  \item{\code{amtweekdays}}{Number of cigarettes smoked per day on weekdays.}
+  \item{\code{type}}{Type of cigarettes smoked with levels Packets, Hand-Rolled, Both/Mainly Packets and Both/Mainly Hand-Rolled}
 }
 }
 \source{
-\url{http://somewhere.important.com/}
+{National STEM Centre, Large Datasets from stats4schools \url{http://www.nationalstemcentre.org.uk/elibrary/resource/3624/large-datasets-from-stats4schools}
+via \url{http://openintro.org}.}
 }
 \usage{
 smoking
 }
 \description{
-DATASET_DESCRIPTION
+{Survey data on smoking habits from the UK.
+The data set can be used for analyzing the demographic characteristics of
+smokers and types of tobacco consumed.}
 }
 \keyword{datasets}

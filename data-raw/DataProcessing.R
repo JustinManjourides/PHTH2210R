@@ -3,10 +3,12 @@
 
 library(readxl)
 library(haven)
+library(tibble)
 
-babies <- read_xls("data-raw/babies1.xls")
-smoking <- read_csv("data-raw/smoking.csv")
-unicef <- read_stata("data-raw/unicef.dta")
+babies <- as_tibble(read_xls("data-raw/babies1.xls"))
+smoking <- as_tibble(read_csv("data-raw/smoking.csv"))
+unicef <- as_tibble(read_stata("data-raw/unicef.dta"))
+bed <- as_tibble(read_stata("data-raw/bed.dta"))
 
 # This should be the last line.
 # Note that names are unquoted.
@@ -15,4 +17,4 @@ unicef <- read_stata("data-raw/unicef.dta")
 usethis::use_data(babies, overwrite = T)
 usethis::use_data(smoking, overwrite = T)
 usethis::use_data(unicef, overwrite = T)
-
+usethis::use_data(bed, overwrite = T)
