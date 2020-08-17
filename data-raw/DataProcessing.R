@@ -1,14 +1,11 @@
 # data-raw/DataProcessing.R
 # Data import and processing pipeline
 
-library(readxl)
-library(haven)
-library(tibble)
 
-babies <- as_tibble(read_xls("data-raw/babies1.xls"))
-smoking <- as_tibble(read_csv("data-raw/smoking.csv"))
-unicef <- as_tibble(read_stata("data-raw/unicef.dta"))
-bed <- as_tibble(read_stata("data-raw/bed.dta"))
+babies <- tibble::as_tibble(readxl::read_xls("data-raw/babies1.xls"))
+smoking <- tibble::as_tibble(readr::read_csv("data-raw/smoking.csv"))
+unicef <- tibble::as_tibble(haven::read_stata("data-raw/unicef.dta"))
+bed <- tibble::as_tibble(haven::read_stata("data-raw/bed.dta"))
 
 # This should be the last line.
 # Note that names are unquoted.

@@ -2,11 +2,18 @@ Package: PHTH2210R
 Type: Package
 Title: Datasets for use in PHTH 2210
 Version: 0.1.0
-Author: Justin Manjourides
+Authors@R: person("Justin", "Manjourides", email = "j.manjourides@northeastern.edu",
+  role = c("aut", "cre"))
 Maintainer: Justin Manjourides <j.manjourides@northeastern.edu>
-Description: This package contains several datasets that may or may not be used in PHTH 2210 at Northeastern University. 
+Description: This package contains several datasets that may or may 
+  not be used in PHTH 2210 at Northeastern University. 
 License: CC0
 Depends: R (>= 3.1.0)
+Imports:
+    readxl,
+    haven,
+    tibble,
+    readr
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.1.0
